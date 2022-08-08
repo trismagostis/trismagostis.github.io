@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/mleverjy" method="post">
+        <label for="fname">Imię</label>
+        <input type="text" name ="fname" id="fname" placeholder="podaj imię"><br><br>
+        <label for="sname">Nazwisko:</label>
+        <input type="text" name ="sname" id="sname" placeholder="podaj nazwisko"><br><br>
+        <label for="email">Adres email:</label>
+        <input type="email" name ="email" id="email" required placeholder="podaj email"><br><br>
+        <label for="tel">Numer telefonu:</label>
+        <input type="tel" name ="tel" id="tel" placeholder="podaj numer telefonu"><br><br>
+        <label for="city">Wybierz miasto z listy:</label>
+        <select name="city" id="city">
+            <!-- value przekazywane do backendu -->
+            <option value="K-w">Kraków</option>
+            <option value="G-k" selected>Gdańsk</option>
+            <option value="Wa-wa">Warszawa</option>
+        </select><br><br>
+        <label for="gender">Płeć:</label>  <br><br>
+        <input type="radio" id="gender" name="gender" value="M">Mężczyzna<br><br>
+        <input type="radio" name="gender" id="gender" value="F" >Kobieta<br><br>
+        <label>Zgoda na przetwarzanie danych<input type="checkbox" name="agreement"></label><br><br>
+        <label >Wiadomość:<textarea name="message"  maxlength="500"></textarea></label><br><br>
+        <input type="submit" name="submit" >
+    </form>
+</body>
+</html>
